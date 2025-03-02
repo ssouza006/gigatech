@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Animação de fundo */
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+        /* Estilo global */
+        body {
+            background: linear-gradient(135deg, #001F3F, #004080, #000000);
+            background-size: 300% 300%;
+            animation: backgroundAnimation 15s infinite alternate;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Caixa principal (efeito vidro fosco) */
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+            animation: fadeIn 1s ease-in-out;
+            max-width: 400px;
+        }
+
+        /* Animação de entrada */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Logo */
+        .logo {
+            max-width: 120px;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+
+        /* Títulos e textos */
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        /* Links estilizados */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Botões animados */
+        .link-btn {
+            background: linear-gradient(45deg, #007bff, #00a2ff);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+            display: inline-block;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .link-btn:hover {
+            background: linear-gradient(45deg, #0056b3, #008cff);
+            transform: scale(1.05);
+            box-shadow: 0px 6px 12px rgba(0, 123, 255, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img/logo.png.jpg" alt="Logo Giga Tech Solutions" class="logo">
+        <h1>Bem-vindo!</h1>
+        <p>Escolha um dos nossos empreendimentos:</p>
+        <div class="links">
+            <a href="site.html" class="link-btn">Giga Tech Solutions</a>
+            <a href="skina.html" class="link-btn">SKINA AÇAÍ</a>
+            <a href="#" class="link-btn">Empreendimento 3</a>
+        </div>
+    </div>
+</body>
+</html>

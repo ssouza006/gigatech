@@ -1,0 +1,166 @@
+/* Animação de fundo */
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* Estilo global */
+body {
+    background: linear-gradient(135deg, #001F3F, #004080, #000000);
+    background-size: 300% 300%;
+    animation: backgroundAnimation 15s infinite alternate;
+    color: white;
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00d9ff;
+    text-shadow: 0px 0px 10px #00d9ff;
+}
+
+/* Seção Home */
+#home {
+    padding: 50px;
+}
+
+.logo-principal {
+    width: 180px;
+    transition: transform 0.3s;
+}
+
+.logo-principal:hover {
+    transform: scale(1.1);
+}
+
+/* Botão animado */
+.btn {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.btn:hover {
+    background: #0056b3;
+    box-shadow: 0px 6px 12px rgba(0, 123, 255, 0.6);
+    transform: translateY(-3px);
+}
+
+/* Seção de Serviços - Fundo Branco */
+#servicos {
+    background: white;
+    color: black;
+    padding: 50px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.servico {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.servico:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Seção de Contato - Estilo Vidro Fosco */
+#contato {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 50px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Formulário */
+form {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Rodapé */
+footer {
+    background: black;
+    padding: 15px;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: 30px;
+}
