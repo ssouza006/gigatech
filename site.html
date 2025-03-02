@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giga Tech Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Home (Logo como destaque) -->
+    <section id="home">
+        <img src="img/logo.png.jpg" alt="Giga Tech Solutions" class="logo-principal">
+
+        <h2>Assistência Técnica Especializada</h2>
+        <p>MANUTENÇÃO DE CELULAR, TABLET, NOTEBOOKS E COMPUTADOR.</p>
+        <a href="#contato" class="btn">Solicitar Atendimento</a>
+        <a href="index.html" class="btn btn-white">Voltar ao inico</a>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <div class="servico">
+            <h3>📱 Celulares</h3>
+            <p>Troca de tela, bateria, Conector, conserto de placas e mais.</p>
+        </div>
+        <div class="servico">
+            <h3>💻 Notebooks & Computadores</h3>
+            <p>Formatação, troca de peças, reparo em placas, limpeza e upgrades.</p>
+        </div>
+        <div class="servico">
+            <h3>🔊 Caixinhas de Som</h3>
+            <p>Troca de conector, Bateria e adaptações.</p>
+        </div>
+        <div class="servico">
+            <h3>📷 CFTV</h3>
+            <p>Instalação e manutenção de câmeras de segurança.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Visite nosso Instagram: <a href="https://www.instagram.com/gigatechsolutionss" target="_blank">Instagram</a></p>
+        <form id="formContato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="servico">Tipo de Serviço:</label>
+            <select id="servico" name="servico">
+                <option value="celular">Celular</option>
+                <option value="notebook">Notebook / Computador</option>
+                <option value="som">Caixa de Som</option>
+                <option value="cftv">CFTV</option>
+            </select>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>2025 Giga Tech Solutions.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
