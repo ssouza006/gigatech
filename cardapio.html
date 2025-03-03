@@ -46,18 +46,32 @@
             border-radius: 10px;
         }
         .prev, .next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 50%;
-        }
-        .prev { left: 10px; }
-        .next { right: 10px; }
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 10; /* Garante que o botão fique acima da imagem */
+}
+
+.prev {
+    left: -50px; /* Afasta o botão 'anterior' da esquerda */
+}
+
+.next {
+    right: -50px; /* Afasta o botão 'próximo' da direita */
+}
+
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
     </style>
 </head>
 <body>
